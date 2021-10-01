@@ -7,6 +7,6 @@ class ContentManager
   end
 
   def build_lines
-    @lines = File.readlines(self.filename)
+    @lines = File.readlines(self.filename, chomp: true)
   end
 end

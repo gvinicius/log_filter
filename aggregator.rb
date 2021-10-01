@@ -1,4 +1,3 @@
-require 'pry'
 require 'set'
 
 class Aggregator
@@ -19,6 +18,6 @@ class Aggregator
       group_by { |key, _| key }
     quantified_results = distinct_results.map { |result, findings| { result => findings.count } }
 
-    return quantified_results.sort_by { |hsh| hsh.values }.send(sort_expression)
+    return quantified_results.sort_by { |hsh| hsh.values }.send(sort_expression).inject(&:merge)
   end
 end
