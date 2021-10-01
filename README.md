@@ -3,15 +3,19 @@
 Firter logs by using ruby.
 
 ## Setup
-```# install ruby 3.0.2
+```
+# install ruby 3.0.2
 ```
 
-``` bundle install
+```
+bundle install
 ```
 
-``` bundle exec rspec # for testing
+```
+bundle exec rspec # for testing
 ```
 
 ## Run
-``` ruby ./parser.rb
+```
+ruby ./parser.rb
 ```
