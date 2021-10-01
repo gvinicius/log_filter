@@ -25,8 +25,8 @@ describe ContentManager do
 
     context 'for an existing file' do
       before do
-        allow(File).to receive(:exists?).with(filename).and_return(false)
-        allow(File).to receive(:readlines).with(filename).and_return(lines)
+        allow(File).to receive(:exists?).with(filename).and_return(true)
+        allow(File).to receive(:readlines).with(filename, {:chomp=>true}).and_return(lines)
       end
 
       it 'does not raise any errors' do

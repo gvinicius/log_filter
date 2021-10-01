@@ -14,7 +14,14 @@ class Operator
 
   def tabulate
     lines = content_manager.lines
-    results = aggregator.run(lines)
+    results = aggregator.totalize(lines)
+
+    return results
+  end
+
+  def tabulate_unique
+    lines = content_manager.lines
+    results = aggregator.totalize_unique(lines)
 
     return results
   end
