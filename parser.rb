@@ -11,3 +11,6 @@ operator.tabulate.map { |element| puts "#{element.keys.first} - #{element.values
 
 puts 'Most viewed pages (unique accesses)'
 operator.tabulate_unique.map { |element| puts "#{element.keys.first} - #{element.values.first}" }
+
+puts 'Most viewed pages (avarage accesses)'
+operator.average.map { |element| puts "#{element.keys.first} - #{element.values.first}" }

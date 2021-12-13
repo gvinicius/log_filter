@@ -17,5 +17,5 @@ bundle exec rspec # for testing
 
 ## Run
 ```
-ruby ./parser.rb
+ruby ./parser.rb FILEPATH
 ```

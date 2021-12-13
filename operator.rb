@@ -25,4 +25,11 @@ class Operator
 
     return results
   end
+
+  def average
+    lines = content_manager.lines
+    results = aggregator.average(lines)
+
+    return results
+  end
 end
